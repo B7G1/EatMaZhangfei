@@ -1005,10 +1005,10 @@ else{
 chance_score = "<p>没有使用机会</p>";
 }
 //得分评语，变量cnt为点击次数，timeout_plus是游戏所使用的时间，cnt/timeout_plus可以得出平均每秒点击次数(CPS)
-if(cnt/timeout_plus>=20){endui_say = "您";}
-else if(cnt/timeout_plus>=15){endui_say = "刑啊";}
-else if(cnt/timeout_plus>=7){endui_say = "好家伙";}
-else if(cnt/timeout_plus>=3){endui_say = "还能再练一下，没事的";}
+if(cnt/timeout_plus>=20){endui_say = "董姐姐束手就擒了";}
+else if(cnt/timeout_plus>=15){endui_say = "董姐姐被狠狠你抓住了";}
+else if(cnt/timeout_plus>=7){endui_say = "董姐姐似乎不太满意你的表现";}
+else if(cnt/timeout_plus>=3){endui_say = "董姐姐逃掉了";}
 else{endui_say = "---蔡---";}
 document.getElementById("endui_timeout").innerHTML = "<p style='margin:5px;font-size:15px;color:rgb(0,200,195)'>" + endui_say + "</p><p>您在 " + timeout_plus + " 秒内点击了 " + cnt + " 次</p><p>平均每秒点击次数(CPS)：" + cnt / timeout_plus + "</p>" + chance_score;
 }
